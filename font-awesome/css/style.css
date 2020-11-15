@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: rgb(0,43,147);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(169,68,113);
+  text-decoration: underline;
+}
+
+
+/*
+  Font Awesome styles related to the web font implementation.
+
+  Because Font Awesome uses a web font to display icons, we are able to
+  change the color of the icons using css!
+*/
+
+i {
+  margin-right: 8px;
+}
+
+.fa-facebook-square {
+  color: rgb(66,103,178);
+}
+
+.fa-twitter {
+  color: rgb(29,161,242);
+}
+
+.fa-phone-square-alt {
+  color: rgb(86,185,68);
+}
+
+
+
+/*
+  Font Awesome styles related to the embedded image implementation.
+
+  Because SVGs are large by default, it's necessary to re-size these in
+  CSS. You would never do this with raster images. But it is okay to do
+  with vector images since these are usually small in file size and are
+  designed to be re-sized with 'math.'
+
+  The following rule uses an attribute selector in CSS. This will
+  target any tag which has a 'src' attribute which ends with '.svg'.
+  When the width is set to a fixed width, set the height to auto to
+  assure the image is not distorted when re-sized.
+*/
+
+[src$='.svg'] {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+}
